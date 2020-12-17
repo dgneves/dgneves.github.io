@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <ul></ul>
+    <input type="text" name="nome" placeholder="Insira seu nome">
+    <button onClick="adicionar()">Adicionar</button>
+</body>
+<script>
+var nomes = ["Diego", "Gabriel", "Lucas"];
+var listaUL = document.querySelector('ul');
+var inputNome = document.querySelector('input');
+
+function adicionaNaLista(texto){
+    var listaLI = document.createElement('li');
+    var criaTexto = document.createTextNode(texto);
+    listaLI.appendChild(criaTexto);
+    listaUL.appendChild(listaLI);
+}
+function adicionar(){
+    adicionaNaLista(inputNome.value);
+    inputNome.value = "";
+}
+for(item of nomes){
+    adicionaNaLista(item);
+}
+</script>
+</html>

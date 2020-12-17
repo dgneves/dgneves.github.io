@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <button id="clique">Clique aqui!</button>
+    <div id="quadsVermelho"></div>
+</body>
+<script>
+    var botao = document.getElementById("clique");
+    var criaQuadrado = document.getElementById("quadsVermelho");
+
+    botao.onclick = function(){
+        var quadrados = document.createElement("div");
+        quadrados.style.width = "100px";
+        quadrados.style.height = "100px";
+        quadrados.style.backgroundColor = "red";
+        quadrados.style.margin = "5px";
+        criaQuadrado.appendChild(quadrados);
+    }
+</script>
+</html>

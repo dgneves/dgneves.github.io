@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <ul></ul>
+</body>
+<script>
+var nomes = ["Diego", "Gabriel", "Lucas"];
+var listaUL = document.querySelector('ul');
+
+for(item of nomes){
+    var listaLI = document.createElement('li');
+    var criaTexto = document.createTextNode(item);
+    listaLI.appendChild(criaTexto);
+    listaUL.appendChild(listaLI);
+}
+</script>
+</html>
