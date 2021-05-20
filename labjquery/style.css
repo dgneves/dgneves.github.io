@@ -1,0 +1,10 @@
+.scroller{
+	width: 18%;
+	min-height: min-content;
+	max-height: 220px;
+    overflow-y: scroll;
+    font-size: 16px;
+}
+.data{
+    width:4.5em;
+}

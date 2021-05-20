@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery3.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Laboratório jQuery 2</title>
+</head>
+<body>
+    <div id="questaon1">
+        <strong>1) Faça um programa que leia uma frase e escreva abaixo invertendo os caracteres - o primeiro se torna o último, o segundo o penúltimo e assim por diante.</strong>
+        <p>Somebody once told me the world is gonna roll me, I ain't the sharpest tool in the shed.</p>
+        <button>Inverter</button>      
+    </div>
+    <div id="questaon2">
+        <br>
+        <strong>2) Faça um programa que leia uma frase e escreva abaixo marcando as vogais em negrito.</strong>
+        <p>Somebody once told me the world is gonna roll me, I ain't the sharpest tool in the shed.</p>
+        <button>Marcar vogais</button>
+    </div>
+    <div id="questaon3">
+        <br>
+        <strong>3) Faça um programa que leia um texto e separe todas as palavras em um array, indicado para cada uma delas o número de vezes que aparece no texto. Imprima o array em uma tabela contendo a palavra e número de ocorrências.</strong>
+        <p>Somebody once told me the world is gonna roll me, I ain't the sharpest tool in the shed. She was lookin' kind of dumb with her finger and her thumb in the shape of an "L" on her forehead. The years start comin', and they don't stop comin', fed to the rules and I hit the ground runnin', didn't make sense not to live for fun. Your brain gets smart but your head gets dumb. So much to do, so much to see, so what's wrong with takin' the backstreets. You'll never know if you don't go, you'll never shine if you don't glow. Hey, now, you're an all-star. Get your game on, go play. Hey, now, you're a rock star. Get the show on, get paid. And all that glitters is gold, only shootin' stars break the mold. It's a cool place, and they say it gets colder, you're bundled up now, but wait till you get older. But the meteor men beg to differ judging by the hole in the satellite picture. The ice we skate is gettin' pretty thin, the water's getting warm so you might as well swim. My world's on fire, how 'bout yours? That's the way I like it and I'll never get bored. Hey, now, you're an all-star. Get your game on, go play. Hey, now, you're a rock star. Get the show on, get paid. And all that glitters is gold, only shootin' stars break the mold.</p>
+        <div class="scroller">
+            <table>
+                <tr>
+                    <th>Palavra</th>
+                    <th>Ocorrências</th>
+                </tr>
+            </table>
+        </div>
+            <button>Contar Palavras</button>
+    </div>
+        <div id="questaon4">
+            <br>
+            <strong>4) Faça um programa que leia um texto e indique a palavra de maior ocorrência e quantas vezes ela apareceu no texto.</strong>
+            <p>Somebody once told me the world is gonna roll me, I ain't the sharpest tool in the shed. She was lookin' kind of dumb with her finger and her thumb in the shape of an "L" on her forehead. The years start comin', and they don't stop comin', fed to the rules and I hit the ground runnin', didn't make sense not to live for fun. Your brain gets smart but your head gets dumb. So much to do, so much to see, so what's wrong with takin' the backstreets. You'll never know if you don't go, you'll never shine if you don't glow. Hey, now, you're an all-star. Get your game on, go play. Hey, now, you're a rock star. Get the show on, get paid. And all that glitters is gold, only shootin' stars break the mold. It's a cool place, and they say it gets colder, you're bundled up now, but wait till you get older. But the meteor men beg to differ judging by the hole in the satellite picture. The ice we skate is gettin' pretty thin, the water's getting warm so you might as well swim. My world's on fire, how 'bout yours? That's the way I like it and I'll never get bored. Hey, now, you're an all-star. Get your game on, go play. Hey, now, you're a rock star. Get the show on, get paid. And all that glitters is gold, only shootin' stars break the mold.</p>
+            <p class="p"></p>
+            <button>Mostrar a mais comum</button>
+        </div>
+        <div id="questaon5">
+            <br>
+            <strong>5) Faça um programa que implemente a funcionalidade substituir em textos, ou seja, terá um campo "procurar" e um campo "substituir". Ao executar, seu programa deverá procurar as ocorrências no texto do valor digitado em "procurar" e trocar pelo valor digitado em "substituir".</strong>
+            <p>Somebody once told me the world is gonna roll me, I ain't the sharpest tool in the shed. She was lookin' kind of dumb with her finger and her thumb in the shape of an "L" on her forehead. The years start comin', and they don't stop comin', fed to the rules and I hit the ground runnin', didn't make sense not to live for fun. Your brain gets smart but your head gets dumb. So much to do, so much to see, so what's wrong with takin' the backstreets. You'll never know if you don't go, you'll never shine if you don't glow. Hey, now, you're an all-star. Get your game on, go play. Hey, now, you're a rock star. Get the show on, get paid. And all that glitters is gold, only shootin' stars break the mold.</p>
+            <input type="text" id="input1_5" placeholder="Procurar">
+            <input type="text" id="input2_5" placeholder="Substituir">
+            <button>Substituir</button>
+        </div>
+        <div id="questaon6">
+            <br>
+            <strong>6) Faça um programa que leia uma data de nascimento e retorne quantos dias de vida a pessoa tem.</strong>
+            <input type="number" name="dia" class="data" placeholder="Dia" min="1" max="31">
+            <input type="number" name="mes" class="data" placeholder="Mês" min="1" max="12">
+            <input type="number" name="ano" class="data" placeholder="Ano" min="0" max="9999">
+            <button>Calcular</button>
+        </div>
+        <div id="questaon7">
+            <br>
+            <strong>7) Faça um programa que leia uma data de nascimento em formato de dd/mm/aaaa e escreva por extenso a data.</strong>
+            <input type="number" name="dia" class="data" placeholder="Dia" min="1" max="31">
+            <input type="number" name="mes" class="data" placeholder="Mês" min="1" max="12">
+            <input type="number" name="ano" class="data" placeholder="Ano" min="0" max="9999">
+            <button>Escrever</button>
+        </div>
+        <div id="questaon8">
+            <br>
+            <strong>8) Faça um programa que leia duas datas e indique em semanas a distância entre elas.</strong>
+            <br>
+            <input type="number" name="dia1" class="data" placeholder="Dia" min="1" max="31">
+            <input type="number" name="mes1" class="data" placeholder="Mês" min="1" max="12">
+            <input type="number" name="ano1" class="data" placeholder="Ano" min="0" max="9999">
+            <br>
+            <input type="number" name="dia2" class="data" placeholder="Dia" min="1" max="31">
+            <input type="number" name="mes2" class="data" placeholder="Mês" min="1" max="12">
+            <input type="number" name="ano2" class="data" placeholder="Ano" min="0" max="9999">
+            <br>
+            <button>Calcular</button>
+            </div>
+        <div id="questaon9">
+            <strong>9) Faça uma caixa de texto que classifique:
+            <br>- Fraca (em vermelho) se só possuir letras minúsculas ou maiúsculas
+            <br>- Moderada (em laranja) se possuir letras minúsculas e maiúsculas e números
+            <br>- Forte (em verde) se possuir letras minúsculas e maiúsculas, números e caracteres especiais</strong>
+            <br><input type="password">
+            <p></p>
+        </div>
+</body>
+</html>
